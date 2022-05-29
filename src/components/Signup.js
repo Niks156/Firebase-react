@@ -16,7 +16,6 @@ import Alert from "@mui/material/Alert";
 const theme = createTheme();
 
 export default function Signup() {
-  const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
@@ -66,7 +65,7 @@ export default function Signup() {
             noValidate
             sx={{ mt: 1 }}
           >
-            <TextField
+            {/* <TextField
               margin="normal"
               required
               fullWidth
@@ -76,7 +75,7 @@ export default function Signup() {
               autoComplete="name"
               autoFocus
               onChange={(e) => setName(e.target.value)}
-            />
+            /> */}
             <TextField
               margin="normal"
               required
